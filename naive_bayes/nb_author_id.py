@@ -24,5 +24,13 @@ t1 = time()
 pred = clf.predict(features_test)
 print "PREDICTION TIME :", round(time()-t1, 3)
 accuracy = sum(x == y for x, y in zip(pred, labels_test))/(len(labels_test)*0.01)
-print "\nACCURACY :", accuracy
+print "ACCURACY :", accuracy
 #########################################################
+
+
+'''
+INSIGHTS:
+    LEARNING TIME : 2.203
+    PREDICTION TIME : 0.318
+    ACCURACY : 97.3265073948
+'''
